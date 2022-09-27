@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: value 0 (success)
- */
+ *  * main - Entry point
+ *   * Return: value 0 (success)
+ *    */
 int main(void)
 { printf("\"Programming is like building a multilingual puzzle");
-return (0);
+	return (0);
 }
