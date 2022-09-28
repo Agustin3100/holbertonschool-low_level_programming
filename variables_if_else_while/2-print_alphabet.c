@@ -4,17 +4,17 @@
  * Return: value 0 (success)
  */
 
-int main (void) {
-	char a = 'a';
-	char z = 'z';
-		
-         
 
-while (a < z){
-putchar(a);
-return (a);	
+ 
+int main()
+{
+	  	char ch;
 
-
-}
-return (0);
+		  
+			  	for(ch = 'a'; ch <= 'z'; ch++)
+					  	{
+							  		putchar(ch);	
+										}
+				  
+				  	return 0;
 }
