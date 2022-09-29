@@ -2,11 +2,11 @@
 int main(void)
 {
 
-int h;
+int n;
 
-for ( h = 0; 'h' < 10; ++h)
+for ( n = 0; 'n' < 10; ++n)
 {
-putchar(h);
+putchar(n);
 }
 
 return (0);
