@@ -1,14 +1,15 @@
+
 #include <stdio.h>
 
-
 int main() {
-	          int b;
+	         float b;
 
-		              for (b = 0; b < 10; ++b)
+		              for (b = 0.48; b < 0.49048; ++b)
 				                            {
-								                                      printf("%d", b);
+		                  putchar(b);
 												                                          }
-			                 printf("\n");
+			                 putchar('\n');
 
 					            return (0);
-}                      
+}
+                         
