@@ -1,16 +1,14 @@
 #include <stdio.h>
-int main(void)
-{
-
-int n;
-
-for ( n = 0; 'n' < 10; ++n)
-{
-putchar(n);
-}
-
-return (0);
 
 
+int main() {
+	          int b;
 
-}
+		              for (b = 0; b < 10; ++b)
+				                            {
+								                                      printf("%d", b);
+												                                          }
+			                 printf("\n");
+
+					            return (0);
+}                      
