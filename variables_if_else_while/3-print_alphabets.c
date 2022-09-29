@@ -12,11 +12,11 @@ int main()
 			char CH;
 
 
-	                  for(ch = 'a'; ch <= 'z';)
+	                  for(ch = 'a'; ch <= 'z';ch++)
 			  {
 															                                putchar(ch);
 			  }
-		         for(CH = 'A'; ch <= 'Z';)
+		         for(CH = 'A'; ch <= 'Z';CH++)
 			 {
 				 putchar(CH);
 				 
