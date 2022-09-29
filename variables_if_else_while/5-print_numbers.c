@@ -10,5 +10,6 @@ int main() {
 			          printf("%d", b);
 				    }
 	   printf("\n");
-	      return (0);
+	     
+	   return (0);
 }
