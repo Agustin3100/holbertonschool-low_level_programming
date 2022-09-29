@@ -12,7 +12,7 @@ int main()
                    
 
 
-                 while(( ch = 'q') !='q' || (ch = 'e') !='e')
+                 while(( ch = 'q') !='q' && (ch = 'e') !='e')
 		 {	 
 
 						                 
