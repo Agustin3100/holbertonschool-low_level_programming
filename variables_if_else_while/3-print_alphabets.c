@@ -18,8 +18,8 @@ int main()
 			  }
 		         for(CH = 'A'; CH <= 'Z';CH++)
 			 {
-				 putchar(CH);
-				 putchar('\n'); 
+				 putchar(CH);putchar('\n');
+				  
 		 	 }			
 			 return 0;
 
