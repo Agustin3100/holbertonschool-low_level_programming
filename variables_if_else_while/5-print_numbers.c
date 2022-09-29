@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 int main() {
-	  int i;
+	  int b;
 
-	    for (i = 0; i < 10; ++i)
+	    for (b = 0; b < 10; ++b)
 		      {
-			          printf("%d", i);
+			          printf("%d\n", b);
 				    }
 	      return (0);
 }
