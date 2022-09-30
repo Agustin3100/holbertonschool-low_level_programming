@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 int main() {
-	         float b;
+	         int b;
 
-		              for (b = 0.48; b < 0.49048; ++b)
+		 for (b = '0'; b <= '9'; ++b)
 				                            {
-		                  putchar(b);
+		                  putchar((b % 10)+'0');
 												                                          }
 			                 putchar('\n');
 
