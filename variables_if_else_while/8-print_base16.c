@@ -1,14 +1,26 @@
 #include <stdio.h>
+int main (void)
+{
 
-int main() {
-	          int b;
+	int b;
+	char az;
 
-		              for (b = 0; b < 10; ++b)
-				                            {
-								                                      printf("%d", b);
-												                                          }
-			                 printf("\n");
+for (b = 0; b <= 9; ++b)
+{
 
-					            return (0);
+	putchar((b % 10)+'0');
+
 }
-~          
+putchar('\n');
+
+for (az = 'a'; az <= 'f'; az++)
+{
+
+	putchar(az);
+
+}
+
+putchar('\n');
+
+return (0);
+}          
