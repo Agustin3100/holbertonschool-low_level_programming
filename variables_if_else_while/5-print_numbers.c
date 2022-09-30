@@ -1,15 +1,20 @@
-
-
 #include <stdio.h>
+/**
+* main - print single digits number of base 10
+* Return: value 0 (success)
+*/
 
-int main() {
-	  int b;
+int main(void)
+{
 
-	    for (b = 0.48; b < 0.49048; ++b)
-		      {
-			          printf("%d", b);
-				    }
-	   printf("\n");
-	     
-	   return (0);
+int b;
+
+for (b = 0; b < 10; ++b)
+{
+printf("%d", b);
+printf("\n");
+
+}
+
+return (0);
 }
