@@ -1,7 +1,7 @@
 #include <stdio.h>
-/*
- *  *  * main - print the alphabet
- *   *   * Return: value 0 (success)
+/**
+ * * main - print the alphabet without q and e
+ * * Return: value 0 (success)
  */
 
 int main(void)
@@ -18,8 +18,7 @@ if (t != 'q')
 if (t != 'e')
 
 {
-																					putchar(t);
-	
+	putchar(t);
 }
 }
 }
@@ -27,8 +26,3 @@ putchar('\n');
 return (0);
 }
 
-
-
-
-
-																						               
