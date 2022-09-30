@@ -1,20 +1,20 @@
 #include <stdio.h>
-/*
+/**
  * main - print the alphabet
  * Return: value 0 (success)
  */
 
-
- 
-int main()
+int main(void)
 {
-	  	char ch;
+char az;
 
-		  
-			  	for(ch = 'a'; ch <= 'z'; ch++)
-					  	{
-							  		putchar(ch);	
-										}
-				  
-				  	return 0;
+for (az = 'a'; az <= 'z'; az++)
+{
+
+putchar(az);
+
+}
+
+putchar('\n');
+return (0);
 }

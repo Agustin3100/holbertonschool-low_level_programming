@@ -2,26 +2,33 @@
 /*
  *  *  * main - print the alphabet
  *   *   * Return: value 0 (success)
- *    *    */
+ */
 
-
-
-int main()
+int main(void)
 {
-	           char ch;
-                   	 
-while(ch = 'a' ch <= 'z' || ch ='q' !='q' || ch = 'a' ch <= 'z' || ch ='e' !='e';ch++)
+char t = 'a';
+
+for (t = 'a' ; t <= 'z' ; t++)
 {
-						                 
 
-                  for( ch = 'a'; ch <= 'z';ch++)
-		  {
+if (t != 'q')
 
-															                   putchar(ch);
-		  }		 
-}	  
-		  return (0);
+{
+
+if (t != 'e')
+
+{
+																					putchar(t);
+	
 }
+}
+}
+putchar('\n');
+return (0);
+}
+
+
+
 
 
 																						               
