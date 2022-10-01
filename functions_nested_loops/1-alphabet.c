@@ -1,25 +1,13 @@
 #include "main.h"
-#include <unistd.h>
-/**
- *  * main - check the code
- *   *
- *    * Return: Always 0.
- *
- 
- *      
- */
-void print_alphabet_x10(void);
-
-int main(void)
+void print_alphabet(void)
 {
-     char az;
 
-    for (az = 'a'; az <= 'z'; az++)
-    {
 
-	   putchar(az);
+	char c;
 
-    } 
-    return (0);
+	for (c = 'a' ; c <= 'z' ; c++)
+	{	_putchar(c);
+	}
+	_putchar('\n');
+return;
 }
-		    
