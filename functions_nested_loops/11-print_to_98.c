@@ -16,7 +16,7 @@ while( n < 100 ) {
          break;
       }
    }
- 
+printf("98\n"); 
    return;
 }
 
