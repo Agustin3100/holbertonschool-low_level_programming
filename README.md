@@ -1,1 +1,1 @@
-we star with c commands
+we start with c commands
