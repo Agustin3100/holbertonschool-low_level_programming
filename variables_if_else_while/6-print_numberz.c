@@ -2,7 +2,7 @@
  * main - print the alphabet
  * Description: prints numberz
  * Return: value 0 (success)
- */
+ */|
 
 #include <stdio.h>
 int main(void)

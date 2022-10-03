@@ -1,22 +1,17 @@
 #include <stdio.h>
-/*
- *  *  * main - print the alphabet
- *   *   * Return: value 0 (success)
- *    *    */
-
-
-
-int main()
+/**
+ * main - print the alphabet
+ * Description: prints numberz
+ * Return: value 0 (success)
+ */
+int main(void)
 {
-	                        char ch;
-				                        
+char ch;
 
-
-							                           for(ch = 'z'; ch >= 'a';ch--)
-										   {
-															                                    putchar(ch);
-																			                             										  															
-										   }
-							putchar('\n');												    return (0);
-										   
+for (ch = 'z'; ch >= 'a'; ch--)
+{
+putchar(ch);
+}
+putchar('\n');
+return (0);
 }
