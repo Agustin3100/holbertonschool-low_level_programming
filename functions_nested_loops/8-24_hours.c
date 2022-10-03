@@ -1,29 +1,25 @@
 #include "main.h"
 
 /**
- * jack_bauer - Entry point
- *
+ * jack_bauer - hours of the day
+ * Return: always 0
  */
+
 void jack_bauer(void)
 {
-	int horas = 0;
-	int minutos = 0;
+	int h, m;
 
-	if (horas < 24)
+	for (h = 0; h <= 23; h++)
 	{
-		do {
-		minutos++;
-		_putchar((horas / 10) + '0');
-		_putchar((horas % 10) + '0');
-		_putchar(':');
-		_putchar((minutos / 10) + '0');
-		_putchar((minutos % 10) + '0');
-		_putchar(10);
-		if (minutos == 60)
+		for (m = 0; m <= 59; m++)
 		{
-			minutos = 0;
-			horas++;
+			_putchar ((h / 10) + '0');
+			_putchar ((h % 10) + '0');
+			_putchar (':');
+			_putchar ((m / 10) + '0');
+			_putchar ((m % 10) + '0');
+			_putchar ('\n');
+
 		}
-		} while (horas + minutos <= 81);
 	}
 }
