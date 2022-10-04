@@ -1,9 +1,9 @@
 CC=gcc
-SRC=(%.o = %.c)
-OBJ=school.c main.c
+SRC=school.c main.c
+OBJ=$(SRC:.c=.o) 
 NAME=school
 RM=rm
-all:
+all: $(OBJ)
 	$(CC) $(OBJ) $(NAME)
 
 clean:
