@@ -16,4 +16,4 @@ fclean:
 	rm -f /*.o *~ core /*~
 		
 re:
-	gcc $(SRC)
+	clang $(SRC)
