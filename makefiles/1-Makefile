@@ -2,6 +2,6 @@ CC=gcc
 SRC=school.c main.c
 NAME=school
 
-all: school
+all: 
 	$(CC) $(SRC) -o $(NAME)
          
