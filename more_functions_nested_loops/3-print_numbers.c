@@ -1,4 +1,4 @@
-int _putchar(char c);
+#include "main.h"
 void print_numbers(void)
 {
 
