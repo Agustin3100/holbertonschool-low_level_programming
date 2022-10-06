@@ -1,36 +1,32 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- *print_triangle - el triangle
- *Return: (0)
+ * print_triangle - funcion
+ * @size: variable
  */
 void print_triangle(int size)
 {
-	int i;
+	int x, y;
 
-	for (i = 1; i <= 100; i++)
+	if (size > 0)
 	{
-		if (i % 15 == 0)
+		for (x = 1; x <= size; x++)
 		{
-			printf("FizzBuzz");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else
-		{
-			printf("%i", i);
-		}
-		if (i < 100)
-		{
-			printf(" ");
+			for (y = 1; y <= size; y++)
+			{
+				if (y != size && y <= size - x)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(35);
+				}
+			}
+			_putchar('\n');
+
 		}
 	}
-	printf("\n");
-	return (0);
+	else
+		_putchar('\n');
 }
