@@ -1,5 +1,5 @@
 /**
- * print_squares - print the alphabet
+ * print_square - print the alphabet
  * @size: int for characters
  *
  * Description: prints numberz
