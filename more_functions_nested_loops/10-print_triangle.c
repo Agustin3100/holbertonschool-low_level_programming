@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *main - el trabako
+ *print_triangle - el triangle
  *Return: (0)
  */
-int main(void)
+void print_triangle(int size)
 {
 	int i;
 
