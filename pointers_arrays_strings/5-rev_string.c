@@ -5,39 +5,39 @@ int _strlen(char *s);
 
 /**
  * rev_string - function that reverses a string.
- * @s: pointer char[] to check
+ * @s: pointer
  *
- * Return: nothing.
+ * Return: void.
  */
 void rev_string(char *s)
 {
-	int len = _strlen(s) - 1;
+	int lt = _strlen(s) - 1;
 	int i;
-	char prev_value;
-	int half = len / 2;
+	char aux;
+	int lh = lt / 2;
 
-	for (i = 0; i <= half; i++)
+	for (i = 0; i <= lh; i++)
 	{
-		prev_value = s[i];
-		s[i] = s[len];
-		s[len] = prev_value;
-		len--;
+		aux = s[i];
+		s[i] = s[lt];
+		s[lt] = aux;
+		lt--;
 	}
 }
 
 /**
- * _strlen - count the lenght of a string.
- * @s: pointer to count
- * Return: the lenght of the string.
+ * _strlen - function to see lenght of strings.
+ * @s: pointer
+ * Return: lenght of the sring.
  */
 int _strlen(char *s)
 {
-	int len = 0;
+	int lt = 0;
 
 	while (*s)
 	{
-		len++;
+		lt++;
 		s = s + 1;
 	}
-	return (len);
+	return (lt);
 }

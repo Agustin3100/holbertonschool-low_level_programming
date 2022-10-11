@@ -2,21 +2,24 @@
 /**
  * print_rev- printing reverse
  *@s: pointer
+ *Qc: counter
  * Return: always  0
  */
 
 void print_rev(char *s)
 {
-	int aux = 0;
-
-	while (*(s + aux) > '\0')
+int i;
+i = 0;
+	while (*s)
 	{
-		aux++;
+		i++;
+		s = s + 1;
 	}
-	while (aux > 0)
+	while (i > 0)
 	{
-		_putchar (*(s + aux));
-		aux--;
+		s = s - 1;
+		_putchar (*s);
+		i--;
 	}
 	_putchar('\n');
 }
