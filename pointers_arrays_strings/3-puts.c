@@ -2,6 +2,8 @@
 /**
  *_puts - prinst the content of the string
  *@str: string
+ *
+ * Description: updates value of pointer
  *Return: void
 */
 void _puts(char *str)

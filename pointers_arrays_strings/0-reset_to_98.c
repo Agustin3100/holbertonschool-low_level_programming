@@ -1,4 +1,4 @@
-/:x**
+/**
  * reset_to_98 - dereferences pointer
  * @n: pointer dereferencer
  *

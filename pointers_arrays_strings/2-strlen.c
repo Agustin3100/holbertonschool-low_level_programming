@@ -1,11 +1,20 @@
+/**
+ * _strlen - prints the lenght of a string
+ * @s: char pointer for example
+ *
+ * Description: updates value of pointer
+ * Return: value 0 (success)
+ */
 #include <string.h>
 #include <stdio.h>
 int _strlen(char *s)
 {
-    
-      int c = 0;
-   while (s[c] != '\0')
-      c++;
+        int lt = 0;
 
-   return c;
+        while (*s)
+        {
+                lt++;
+                s = s + 1;
+        }
+        return (lt);
 }
