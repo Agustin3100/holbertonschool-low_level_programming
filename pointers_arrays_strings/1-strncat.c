@@ -1,43 +1,22 @@
 #include "main.h"
-int _strlen(char *s);
 char *_strncat(char *dest, char *src, int n)
 {
-int i,j;
+ int i,j;
+  
 i = 0;
 j = 0;
 
-while(src[i] != n){
-	i++;
-}
-while (dest[j] != n){
-	
-src[i] = dest[j];
-
-j++;
-i++;
-}
-
-
-return (dest);  
-}
-
-
-
-
-
-
-
-
-
-int _strlen(char *s)
+for( i = 0; src[i]; i++)
 {
-        int lt = 0;
 
-        while (*s)
-        {
-                lt++;
-                s = s + 1;
-        }
-        return (lt);
+
+
+while (src [j] != src[n])
+{	dest[i + j] = src[j];
+	j++;
+
+	} }  
+	dest[i + j] = '\0';
+return(dest);
+
 }
-

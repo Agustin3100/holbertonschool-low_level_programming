@@ -14,4 +14,4 @@ void _puts(char *str)
 		str = str + 1;
 	}
 	_putchar(10);
-}	
+}

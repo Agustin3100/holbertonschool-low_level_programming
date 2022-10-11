@@ -9,12 +9,13 @@
 #include <stdio.h>
 int _strlen(char *s)
 {
-        int lt = 0;
+	int lt = 0;
 
-        while (*s)
-        {
-                lt++;
-                s = s + 1;
-        }
-        return (lt);
+	while (*s)
+	{
+		lt++;
+
+		s = s + 1;
+	}
+	return (lt);
 }
