@@ -1,5 +1,5 @@
 /**
- * *_strcat - copies a string
+ * *_strcat - concatenates two strings
  * @dest: dest pointer for example
  * @src: src pointer fox example
  *
