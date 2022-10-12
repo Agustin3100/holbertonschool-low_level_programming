@@ -1,23 +1,15 @@
 #include "main.h"
-char *_strncat(char *dest, char *src, int n)
-{
-  int i = 0;  /*contador para la copia*/
-        int j = 0; /* contador para el source*/
+char *_strncat(char *dest, char *src, int n){
+	
+	   int i;
+	   int j;
 
-        char *aux = dest; /* puntero auxiliar con el valor de dest para el return*/
-        char *aux2 = src;
-        /* puntero aux para el puntero de src */
-	if (*src != n)
-        while (*dest) /* while para printear el content de dest */
-                dest++;
-        while (*src++) /* while para printear el content de src */
-                j++;
-        while (i < j) /* while de la copia a partir de src*/
-
-        {
-                *dest++ = *aux2++;
-                i++;
-        }
-        *dest = '\0';
-        return (aux);
+	for (i = 0 ; dest[i] != '\0' ; i++)
+		;
+	for (j = 0 ; j < n && src[j] != '\0' ; j++)
+	{
+		dest[i] = src[j];
+		j++;
+	}
+	return (dest);
 }
