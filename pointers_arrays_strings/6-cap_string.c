@@ -18,7 +18,7 @@ char *cap_string(char *str)
 				str[i] = str[i] - 32;
 					}
 		}
-		else if (str[i] == ' ')
+		else if (str[i - 1] == ' ')
 		{
 			if (str[i] >= 97 && str[i] <= 122)
 			{
@@ -26,5 +26,6 @@ char *cap_string(char *str)
 			}
 		}
 	}
+
 	return (str);
 }
