@@ -1,10 +1,10 @@
+#include "main.h"
+
 /**
- * *_strchr -  locates a character in a string
- * @s: char pointer variable for examle
- * @c: char for example
- *
- * Description: printz numberz
- * Return: NULL
+ * *_strchr - locates a char in a string
+ * @s: pointer for exmaple
+ * @c: char for examle
+ * Return: NUll
  */
 char *_strchr(char *s, char c)
 {

@@ -1,5 +1,5 @@
 /**
- * *_memset -  copies an area of memory
+ * *_memcpy -  copies an area of memory
  * @src: char pointer variable for examle
  * @dest: char pointer for example
  * @n: unsigned int
