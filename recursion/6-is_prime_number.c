@@ -16,7 +16,7 @@ int aux_funq(int x, int y)
 	{
 		return (0);
 	}
-	return (numero_primo(x, y + 1));
+	return (aux_funq(x, y + 1));
 
 }
 
@@ -33,5 +33,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (numero_primo(n, 2));
+	return (aux_funq(n, 2));
 }
