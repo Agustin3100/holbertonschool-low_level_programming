@@ -13,13 +13,13 @@ if(nmemb == 0 || size == 0)
 	return 0;
 }
 
-for(i = 0; i < nmemb; i++)
-{
+
 	p = malloc(sizeof(size)* nmemb);
-	
+for(i = 0; i < size; i++)
+{	
+
 	p[i] = 0;
 }
-
 if(p == NULL)
 {
 	return NULL;
