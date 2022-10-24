@@ -20,6 +20,9 @@ if(s2 == NULL)
 {
 	return "";
 }
+if(p == NULL)
+{	return (NULL);
+}
 
 if(s2len > n)
 {	s2len = n;
@@ -35,14 +38,9 @@ for(i = 0; s2[i] != s2[n]; i++)
 	p[s1len + i] = s2[i];	
 }
 
-if(p == NULL)
-{
-
-return NULL;
-}
 p[len -1] = '\0';
 
-return p;
+return (p);
 
 
 }
