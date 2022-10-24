@@ -2,9 +2,10 @@
 #include <stdlib.h>
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int *p;
 
+	unsigned int *p;
 
+p = 0;
 if(nmemb == 0 || size == 0)
 {
 	return 0;
