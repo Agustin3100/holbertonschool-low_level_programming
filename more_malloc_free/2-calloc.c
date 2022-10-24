@@ -3,15 +3,21 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 
-	unsigned int *p;
+	int *p;
+	unsigned int i;
 
-p = 0;
+
+
 if(nmemb == 0 || size == 0)
 {
 	return 0;
 }
 
-p = malloc(sizeof(size)* nmemb);
+for(i = 0; i < size; i++)
+{
+	p = malloc(sizeof(size)* nmemb);
+	p[i] = 0;
+}
 
 if(p == NULL)
 {
