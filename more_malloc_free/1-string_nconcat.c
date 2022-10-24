@@ -32,13 +32,14 @@ for( i = 0; s1[i]; i++)
 {
 	p[i] = s1[i];
 }
+
 for(i = 0; s2[i] != s2[n]; i++)
 {
 	
 	p[s1len + i] = s2[i];	
 }
 
-p[len -1] = '\0';
+
 
 return (p);
 
