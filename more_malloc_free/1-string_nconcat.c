@@ -13,14 +13,9 @@ char *p;
 
 p = malloc(sizeof(char)* len + n);
 
-	if( s1 == NULL )
+	if( s1 == NULL && s2 == NULL)
 	{	
 		return "";
-	}
-
-	if(s2 == NULL)
-	{
-	return "";
 	}
 
 	if(p == NULL)
