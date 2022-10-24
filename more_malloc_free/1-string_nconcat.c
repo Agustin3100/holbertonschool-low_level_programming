@@ -11,7 +11,7 @@ unsigned int len = s1len + s2len + 1;
 unsigned int i;
 char *p;
 
-p = malloc(sizeof(char)* len);
+p = malloc(sizeof(char)* len + n);
 
 	if( s1 == NULL )
 	{	
