@@ -10,7 +10,14 @@ unsigned int len = s1len + s2len + 1;
 unsigned int i;
 char *p;
 
+	
+
 p = malloc(sizeof(char)* len);
+
+if(p == NULL)
+{
+	return NULL;
+}
 
 for( i = 0; s1[i]; i++)
 {
