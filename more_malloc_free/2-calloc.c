@@ -13,6 +13,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	int *p;
 	unsigned int i;
 
+	if (p == NULL)
+	{
+		return (NULL);
+	}
+
 	if (nmemb == 0 || size == 0)
 	{
 		return (0);
@@ -23,11 +28,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		p[i] = 0;
 	}
-
-	if (p == NULL)
-	{
-		return (NULL);
-	}
-
 	return (p);
 }
