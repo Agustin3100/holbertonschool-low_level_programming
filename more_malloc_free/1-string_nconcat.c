@@ -1,6 +1,8 @@
 /**
  * string_nconcat - concatenates two strings considering n bytes
- * @n: n bytes from the second string
+ * @s1: string 1
+ * @s2: string 2
+ * @n: n bytes from second string
  *
  * Description: updates value of pointer
  * Return: NULL if malloc fails
