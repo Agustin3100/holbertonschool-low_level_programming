@@ -3,23 +3,33 @@
 int *array_range(int min, int max)
 {
 
-        unsigned int i;
-        char *p;
+        int i,j;
+        int *p;
+	
+	
+	
+	
+	j = max - min + 1;
+	
 
-        p = malloc(sizeof(char)*size);
+        p = malloc(sizeof(int)* (max - min +1));
 
-if (size == 0 || p == NULL)
-{       return (NULL);
-}
-        for(i = 0; i < size; i++)
-        {
-
-                p[i] = c;
-        }
- return(p);
-}
+	if( min > max)
+	{
+	return (NULL);
+	}
+  
 
 
+	for(i = 0; i < j; i++)
+	{
+		p[i] = min;
+		min++;
+	}
+	
+
+
+return p;
 
 
 
