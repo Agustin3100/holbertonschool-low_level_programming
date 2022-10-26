@@ -22,7 +22,11 @@ int *array_range(int min, int max)
         p = malloc(sizeof(int)* (max - min +1));
 
 	
-  
+	if(p == NULL)
+	     {
+		return NULL;
+	     }
+
 
 
 	for(i = 0; i < j; i++)
@@ -30,10 +34,7 @@ int *array_range(int min, int max)
 		p[i] = min;
 		min++;
 	}
-if(p == NULL)
-{	return NULL;
 
-}
 
 return p;
 
