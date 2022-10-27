@@ -32,14 +32,13 @@ p = malloc(sizeof(char) * len);
 		return (NULL);
 	}
 
-	for( i = 0; s1[i]; i++)
+	for (i = 0; s1[i]; i++)
 	{
-		p[i] = s1[i];	
+		p[i] = s1[i];
 	}
-	for(i = 0; s2[i]; i++)
+	for (i = 0; s2[i]; i++)
 	{
 		p[s1len + i] = s2[i];
 	}
-	
 return (p);
 }

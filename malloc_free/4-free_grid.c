@@ -1,18 +1,14 @@
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
+nclude "main.h"
+
+/**
+ * free_grid - funcion
+ * @grid: pointer
+ * @height: integer
+ * Return: always
+ */
 void free_grid(int **grid, int height)
 {
-
-int i;
-
-
-
-for(i = 0; i < height; i++)
-{
-	free(grid[i]);	
-}
-
-free(grid);
-
+	for (height -= 1; height >= 0; height--)
+		free(grid[height]);
+	free(grid);
 }
