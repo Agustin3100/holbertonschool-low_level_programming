@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *alloc_grid - returns a pointer
  *
