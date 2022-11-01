@@ -17,7 +17,7 @@ a = atoi(argv[1]);
 b = atoi(argv[3]);
 op = argv[2];
 
-if(*op < 47 && *op > 47)
+if(*op < 42 && *op > 47)
 {
 	printf("Error\n");
 	exit(99);
