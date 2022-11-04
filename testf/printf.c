@@ -1,84 +1,66 @@
-#include "main.h"
 #include <stdarg.h>
+#include <unistd.h>
 int _putchar(char c);
+int _printchar(const char *c);
+int _printstr(const char *s);
 int _printf(const char *format, ...)
 {
 
-int i, cnt;
+int i;
+
+
 
 va_list str;
+
+
 
 
 va_start(str, *format);
 
 
-
-
 	
-		for (i = 0; format[i] != '\0'; i++)
-		{
-
-	if (format[i] != '%')
+		for (i = 0; format[i]; i++)
+		;
+	if (format[i] != '%') 
 	{
-			
+	
 	
 				
  		va_arg(str, int);
 		_putchar(format[i]);
-
-			
-	
 	}
+		
 
-
-	if (format[i] == '%' && format[i] == 's')
+	if(format[i] == '%')
 	{
 		
-			va_arg(str, int);
-			_putchar(format[i]);
 		
+		i++;
+		va_arg(str, int);
+		_printchar(format);
+
+		 
+	}
+
+	if (format[i + 1] == '%')
+	{
+		_putchar('%');
+		i++;					
 
 
 	}
+	
+
+
+		
+return i;
+
+
 
 
 	
 	 
-	
-	else if (format[i + 1] == '%')
-	{
-		cnt += _putchar('%');
-		i++;
-	}
-		
-		
-		
-		}	
 
-
-	
-	
-	
-	if (format[i] == '%' && format[i] == 'c')	
-	{
-		
-		
-				
-			va_arg(str, int);
-			_putchar(*format);
-		
-
-	}
-	return i;
-
-		
-	
-	
-	
-	
-va_end(str);
-
-return i;
 
 
 
@@ -97,6 +79,48 @@ char c = c;
 
 
 
+
 	return 0;
 
+
 }
+
+
+int _printchar(const char *c)
+{
+
+va_list arg;
+
+va_arg(arg, const char*);
+return _putchar(*c);
+
+}
+
+int _printstr(const char *s)
+{
+
+int i;
+va_list arg;
+
+         va_arg(arg, const char *);
+        
+
+	i = 0;
+
+
+        while (s[i] != '\0')
+        {
+                _putchar(s[i]);
+                i++;
+        }
+        return (i);
+
+
+
+
+}
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
