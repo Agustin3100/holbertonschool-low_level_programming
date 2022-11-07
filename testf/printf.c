@@ -1,43 +1,31 @@
 #include <stdarg.h>
 #include <unistd.h>
+#include <stdio.h>
 int _putchar(char c);
-int _printchar(const char *c);
-int _printstr(const char *s);
 int _printf(const char *format, ...)
 {
 
-int i;
+	int i;
 
 
 
-va_list str;
-
-
-
-
-va_start(str, *format);
-
-
+	va_list str;
+	va_start(str, *format);
 	
-		for (i = 0; format[i]; i++)
-		;
+	for (i = 0; format[i]; i++)
+			;
 	if (format[i] != '%') 
 	{
-	
-	
-				
- 		va_arg(str, int);
+		va_arg(str, int);
 		_putchar(format[i]);
 	}
-		
-
-	if(format[i] == '%')
+		if(format[i] == '%' && format[i] != 's')
 	{
 		
 		
-		i++;
-		va_arg(str, int);
-		_printchar(format);
+	
+		
+	
 
 		 
 	}
@@ -76,6 +64,7 @@ char c = c;
 	_printf("string: %s\n", "Hello world");
 	_printf("%c\n", c);
 	_printf("%%");
+	printf("prueba jeje % wkjdkjasdkj");
 
 
 
@@ -84,43 +73,3 @@ char c = c;
 
 
 }
-
-
-int _printchar(const char *c)
-{
-
-va_list arg;
-
-va_arg(arg, const char*);
-return _putchar(*c);
-
-}
-
-int _printstr(const char *s)
-{
-
-int i;
-va_list arg;
-
-         va_arg(arg, const char *);
-        
-
-	i = 0;
-
-
-        while (s[i] != '\0')
-        {
-                _putchar(s[i]);
-                i++;
-        }
-        return (i);
-
-
-
-
-}
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-

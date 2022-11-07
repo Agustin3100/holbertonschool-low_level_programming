@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <stdarg.h>
+#include <stdio.h>
 int _putchar(char c);
 
 int _printchar(char *c)	
@@ -13,7 +14,7 @@ return _putchar(*c);
 }
 
 
-int _printstr( char *s)	
+int _printstr(char *s)	
 {
 
 
