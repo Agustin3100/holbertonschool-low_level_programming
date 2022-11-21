@@ -3,16 +3,26 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include "main.h"
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	
+	
+	char *buf = malloc(sizeof(letters));
 	int fd;
 
-	fd = open("filename", O_RDWR, 0600);
+	fd = open(filename, O_RDWR);
+
+	
 
 	write(fd,filename,letters);
 
-	return fd;
+	read(letters,buf,letters);
+	
+	close(fd);
+
+	return letters;
 
 
 
