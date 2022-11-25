@@ -1,36 +1,43 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * add_dnodeint_end - adds a node at the end of the list
- * @head: dereferenced pointer to header value
- * @n: int of the struct
- * Return: addres of the new last node
+ * add_dnodeint_end - returns the nth node a dlistint linked list
+ * @head: heade of the node
+ * @n: int value of the struct
+ * Return: addres for the node
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *newNode;
-	dlistint_t *lastnode;
+dlistint_t *newPtr; /* pointer to a new node */
+dlistint_t *previousPtr;  /* pointer to a previous a node in list */
+dlistint_t *currentPtr;  /* pointer to current node in list */
 
-	newNode = malloc(sizeof(dlistint_t));
+newPtr = malloc(sizeof(dlistint_t));  /* create node */
 
+if (newPtr != NULL)
+{
+	newPtr->n = n;
+	newPtr->next = NULL;
 
-	newNode->n = n;
-	newNode->next = NULL;
+	previousPtr = NULL;
+	currentPtr = *head;
 
-	if (*head == NULL)
+	while (currentPtr != NULL && n > currentPtr->n)
 	{
-		*head = newNode;
+		previousPtr = currentPtr;
+		currentPtr = currentPtr->next;
+	}
+
+	if (previousPtr == NULL)
+	{
+		newPtr->next = *head;
+		*head = newPtr;
 	}
 	else
 	{
-		lastnode = *head;
-
-		while (lastnode->next != NULL)
-		{
-			lastnode = lastnode->next;
-		}
-		lastnode->next = newNode;
+		previousPtr->next = newPtr;
+		newPtr->next = currentPtr;
 	}
-	return (lastnode);
-
+}
+	return (newPtr);
 }
