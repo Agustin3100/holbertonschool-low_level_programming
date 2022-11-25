@@ -1,5 +1,7 @@
 #include "lists.h"
+
 #include <stdlib.h>
+
 /**
  * add_dnodeint - adds a node at the beginning of the list
  * @head: dereferenced pointer to header value
@@ -8,29 +10,30 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-
 	dlistint_t *tmp;
-
+	dlistint_t *aux;
+	
+	aux = *head;
 	if (!head)
 	{
 		free(head);
 		return (NULL);
 	}
-
 	tmp = malloc(sizeof(dlistint_t));
-	if (!tmp)
+	if (!tmp) 
 	{
 		free(head);
 		free(tmp);
 		return (NULL);
 	}
-	tmp->prev = NULL;
 	tmp->n = n;
-	tmp->next = NULL;
-	tmp->next = *head;
-	tmp->prev = *head;
+	tmp->prev = NULL;
+	tmp->next = aux;
 	*head = tmp;
-
-	return (*head);
-
+	
+	if (aux != NULL)
+	{
+		tmp->prev = *head;
+	}
+	return (tmp);
 }
